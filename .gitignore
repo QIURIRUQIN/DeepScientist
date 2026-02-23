@@ -1,0 +1,14 @@
+.env
+
+agent_traces/
+
+backend/outputs/
+backend/res/
+backend/data/
+
+data/
+outputs/
+res/
+results/
+
+frontend/node_modules/

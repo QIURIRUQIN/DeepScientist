@@ -1,0 +1,234 @@
+.workflow-logs {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 8px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.workflow-logs h3 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.logs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.log-entry {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 4px solid #e0e0e0;
+  transition: all 0.3s;
+}
+
+.log-entry:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.log-step {
+  font-weight: 600;
+  color: #667eea;
+  font-size: 0.95rem;
+}
+
+.log-time {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.log-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.log-section {
+  padding: 0.75rem;
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+
+.log-section h4 {
+  margin-bottom: 0.75rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+.paper-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.paper-item {
+  padding: 0.5rem;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.paper-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.paper-link:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+.paper-path {
+  color: #666;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.query-text {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 4px;
+}
+
+.parsed-papers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.parsed-paper {
+  padding: 0.75rem;
+  background: white;
+  border-radius: 6px;
+  border-left: 3px solid #e0e0e0;
+}
+
+.parsed-paper.success {
+  border-left-color: #4caf50;
+}
+
+.parsed-paper.failed {
+  border-left-color: #f44336;
+}
+
+.paper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.paper-name {
+  font-weight: 600;
+  color: #333;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status-badge.failed {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.paper-stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.summary-stats {
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background: #e3f2fd;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+  color: #1976d2;
+}
+
+.idea-text,
+.motivation-text {
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 4px;
+  white-space: pre-wrap;
+}
+
+.experiment-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 4px;
+}
+
+.experiment-stats span {
+  padding: 0.5rem 0.75rem;
+  background: #f5f5f5;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.latex-preview {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: #2d2d2d;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.latex-preview pre {
+  color: #f8f8f2;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.log-message {
+  color: #666;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
